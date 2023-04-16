@@ -45,8 +45,8 @@
             <li class="nav-item">
               <a class="nav-link" href="/register.html">Register</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/cart.html">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
                 <span class="fa fa-shopping-cart fa-lg"></span>
               </a>
             </li>
@@ -66,41 +66,69 @@
         <a href="#" class="btn btn-primary btn-lg">Shop Now</a>
       </div>
     </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="https://via.placeholder.com/300x200.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Motherboard</h5>
-              <p class="card-text">Find the best motherboard for your build</p>
-              <a href="#" class="btn btn-primary">Shop Now</a>
+    <main class="container my-5">
+        <h1 class="mb-4">Your Shopping Cart</h1>
+      
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>AMD Ryzen 7 5800X</td>
+                  <td>$399.99</td>
+                  <td>
+                    <input type="number" class="form-control" value="1">
+                  </td>
+                  <td>$399.99</td>
+                </tr>
+                <tr>
+                  <td>NVIDIA GeForce RTX 3080</td>
+                  <td>$799.99</td>
+                  <td>
+                    <input type="number" class="form-control" value="2">
+                  </td>
+                  <td>$1599.98</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Order Summary</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Subtotal
+                    <span>$1999.97</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Shipping
+                    <span>Free</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Tax
+                    <span>$180.00</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <strong>Total</strong>
+                    <strong>$2179.97</strong>
+                  </li>
+                </ul>
+              </div>
             </div>
+            <a href="#" class="btn btn-primary btn-block">Checkout</a>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="https://via.placeholder.com/300x200.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">RAM</h5>
-              <p class="card-text">Find the best memory for your build</p>
-              <a href="#" class="btn btn-primary">Shop Now</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="https://via.placeholder.com/300x200.png" alt="Card image cap">
-<div class="card-body">
-<h5 class="card-title">Storage</h5>
-<p class="card-text">Find the best storage for your build</p>
-<a href="#" class="btn btn-primary">Shop Now</a>
-</div>
-</div>
-</div>
-</div>
-</div>
+      </main>
+      
 <footer class="bg-secondary mt-4">
     <div class="container">
       <div class="row">
